@@ -1,4 +1,4 @@
-module github.com/takutakukatokatojapan/music-batch-application
+module github.com/takutakukatokatojapan/go_redis
 
 go 1.14
 
