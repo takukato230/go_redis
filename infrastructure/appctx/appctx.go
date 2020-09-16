@@ -2,11 +2,17 @@ package appctx
 
 import (
 	"github.com/labstack/echo"
-	"go_redis/infrastructure/datasorce"
+	"github.com/takutakukatokatojapan/go_redis/infrastructure/datasorce"
 )
 
 type APPContext struct {
-	echo.Echo
-	redis datasorce.RedisDriver
+	echo.Context
+	Redis datasorce.RedisDriver
 }
 
+func NewAPPContext(ctx echo.Context, driver datasorce.RedisDriver) *APPContext {
+	return &APPContext{
+		Context: ctx,
+		Redis:   driver,
+	}
+}
