@@ -16,12 +16,13 @@ RUN set -eux && \
   go get -u github.com/go-delve/delve/cmd/dlv && \
   go build -o /go/bin/dlv github.com/go-delve/delve/cmd/dlv
 
-ENV GO111MODULE on
+ENV GO111MODULE auto
 
 RUN set -eux && \
   go build -o go_redis ./main.go
 
-FROM alpine:3.11
+
+FROM alpine:3.11 as Runner
 
 WORKDIR /app
 
@@ -32,4 +33,4 @@ RUN set -x && \
   adduser -D -G go go && \
   chown -R go:go /app/go_redis
 
-CMD ["./go_redis"]
+ENTRYPOINT ["./go_redis"]

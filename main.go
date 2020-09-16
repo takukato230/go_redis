@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go_redis/injector"
+	"github.com/takutakukatokatojapan/go_redis/injector"
 	"log"
 )
 

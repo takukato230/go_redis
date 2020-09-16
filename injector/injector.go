@@ -3,9 +3,9 @@ package injector
 import (
 	"context"
 	"go.uber.org/dig"
-	"go_redis/api/server"
-	"go_redis/infrastructure/config"
-	"go_redis/infrastructure/datasorce"
+	"github.com/takutakukatokatojapan/go_redis/api/server"
+	"github.com/takutakukatokatojapan/go_redis/infrastructure/config"
+	"github.com/takutakukatokatojapan/go_redis/infrastructure/datasorce"
 )
 
 var c *dig.Container

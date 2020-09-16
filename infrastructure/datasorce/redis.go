@@ -2,7 +2,8 @@ package datasorce
 
 import (
 	"github.com/gomodule/redigo/redis"
-	"go_redis/infrastructure/config"
+	"github.com/takutakukatokatojapan/go_redis/infrastructure/config"
+	"log"
 )
 
 type (
@@ -44,6 +45,7 @@ func (r RedisDriverImpl) Get(key string) (value string, err error) {
 }
 
 func (r RedisDriverImpl) getConnection() (redis.Conn, error) {
+	log.Printf("redis url: %s\n", r.config.RedisURL)
 	conn, err := redis.Dial("tcp", r.config.RedisURL)
 	if err != nil {
 		return nil, err
