@@ -1,0 +1,11 @@
+pkgname="mysql_entities"
+output="infrastructure/datasource/mysql_entities"
+add-global-variants=true
+
+[mysql]
+  dbname  = "test_database"
+  host    = "127.0.0.1"
+  port    = 3306
+  user    = "sa"
+  pass    = "sa"
+  sslmode = "false"

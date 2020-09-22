@@ -1,4 +1,3 @@
 *.rdb
 developments/data/
 developments/log/
-developments/mysql/

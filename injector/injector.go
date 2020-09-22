@@ -2,10 +2,11 @@ package injector
 
 import (
 	"context"
-	"go.uber.org/dig"
 	"github.com/takutakukatokatojapan/go_redis/api/server"
+	"github.com/takutakukatokatojapan/go_redis/domain/repository"
 	"github.com/takutakukatokatojapan/go_redis/infrastructure/config"
-	"github.com/takutakukatokatojapan/go_redis/infrastructure/datasorce"
+	"github.com/takutakukatokatojapan/go_redis/infrastructure/datasource"
+	"go.uber.org/dig"
 )
 
 var c *dig.Container
@@ -13,8 +14,10 @@ var c *dig.Container
 func init() {
 	c = dig.New()
 	c.Provide(config.NewConfig)
-	c.Provide(datasorce.NewRedisDriverImpl)
+	c.Provide(datasource.NewRedisDriverImpl)
 	c.Provide(server.NewServer)
+	c.Provide(datasource.NewDBImpl)
+	c.Provide(repository.NewUserRepository)
 }
 
 func Run() error {

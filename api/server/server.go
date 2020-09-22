@@ -8,15 +8,15 @@ import (
 	"github.com/takutakukatokatojapan/go_redis/api/server/handler"
 	custom_middleware "github.com/takutakukatokatojapan/go_redis/api/server/middleware"
 	"github.com/takutakukatokatojapan/go_redis/infrastructure/config"
-	"github.com/takutakukatokatojapan/go_redis/infrastructure/datasorce"
+	"github.com/takutakukatokatojapan/go_redis/infrastructure/datasource"
 )
 
 type Server struct {
 	config config.Config
-	redis  datasorce.RedisDriver
+	redis  datasource.RedisDriver
 }
 
-func NewServer(config2 config.Config, driver datasorce.RedisDriver) Server {
+func NewServer(config2 config.Config, driver datasource.RedisDriver) Server {
 	return Server{
 		config: config2,
 		redis:  driver,

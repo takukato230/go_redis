@@ -1,4 +1,4 @@
-package datasorce
+package datasource
 
 import (
 	"github.com/gomodule/redigo/redis"
