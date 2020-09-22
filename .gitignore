@@ -1,2 +1,4 @@
 *.rdb
-developments/data/redis/
+developments/data/
+developments/log/
+developments/mysql/
