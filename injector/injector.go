@@ -13,11 +13,11 @@ var c *dig.Container
 
 func init() {
 	c = dig.New()
-	c.Provide(config.NewConfig)
-	c.Provide(datasource.NewRedisDriverImpl)
-	c.Provide(server.NewServer)
-	c.Provide(datasource.NewDBImpl)
-	c.Provide(repository.NewUserRepository)
+	_ = c.Provide(config.NewConfig)
+	_ = c.Provide(datasource.NewRedisDriverImpl)
+	_ = c.Provide(server.NewServer)
+	_ = c.Provide(datasource.NewDBImpl)
+	_ = c.Provide(repository.NewUserRepository)
 }
 
 func Run() error {
