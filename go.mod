@@ -7,7 +7,7 @@ require (
 	github.com/creack/pty v1.1.11 // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/fatih/color v1.9.0 // indirect
-	github.com/friendsofgo/errors v0.9.2 // indirect
+	github.com/friendsofgo/errors v0.9.2
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/gomodule/redigo v1.8.2
 	github.com/imdario/mergo v0.3.11 // indirect
@@ -27,7 +27,7 @@ require (
 	github.com/spf13/viper v1.7.1 // indirect
 	github.com/valyala/fasttemplate v1.2.1 // indirect
 	github.com/volatiletech/inflect v0.0.1 // indirect
-	github.com/volatiletech/sqlboiler v3.7.1+incompatible // indirect
+	github.com/volatiletech/sqlboiler v3.7.1+incompatible
 	go.uber.org/dig v1.10.0
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a // indirect
 	golang.org/x/net v0.0.0-20200904194848-62affa334b73 // indirect

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86810f76-f841-4d25-b403-3b7d21022a30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/go_root/1.14.10/go1.14.10" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1jMlomJEEzwY98AfBw3dEmBONMX" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86810f76-f841-4d25-b403-3b7d21022a30" name="Default Changelist" comment="" />
+      <created>1603622018959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603622018959</updated>
+      <workItem from="1603622020118" duration="510000" />
+      <workItem from="1603622553579" duration="699000" />
+      <workItem from="1603718911926" duration="5651000" />
+    </task>
+    <task id="LOCAL-00001" summary="add error handling">
+      <created>1603622601102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603622601102</updated>
+    </task>
+    <task id="LOCAL-00002" summary="change project go version 1.14">
+      <created>1603622627323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603622627323</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add error handling" />
+    <MESSAGE value="change project go version 1.14" />
+    <option name="LAST_COMMIT_MESSAGE" value="change project go version 1.14" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <auto-vendoring-mode>false</auto-vendoring-mode>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-3173" y="150" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603719527880">
+      <screen x="-3840" y="-178" width="1920" height="1057" />
+    </state>
+    <state x="-3173" y="150" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877/-3840.-178.1920.1057/-1920.-60.1920.1057@-3840.-178.1920.1057" timestamp="1603719527880" />
+    <state x="-3377" y="-101" key="CommitChangelistDialog2" timestamp="1603622627205">
+      <screen x="-3840" y="-178" width="1920" height="1057" />
+    </state>
+    <state x="-3377" y="-101" key="CommitChangelistDialog2/0.23.1440.877/-3840.-178.1920.1057/-1920.-60.1920.1057@-3840.-178.1920.1057" timestamp="1603622627205" />
+    <state x="-3371" y="-11" key="SettingsEditor" timestamp="1603622798110">
+      <screen x="-3840" y="-178" width="1920" height="1057" />
+    </state>
+    <state x="-3371" y="-11" key="SettingsEditor/0.23.1440.877/-3840.-178.1920.1057/-1920.-60.1920.1057@-3840.-178.1920.1057" timestamp="1603622798110" />
+    <state x="-3150" y="89" width="540" height="540" key="StructurePopup" timestamp="1603720228341">
+      <screen x="-3840" y="-178" width="1920" height="1057" />
+    </state>
+    <state x="-3150" y="89" width="540" height="540" key="StructurePopup/0.23.1440.877/-3840.-178.1920.1057/-1920.-60.1920.1057@-3840.-178.1920.1057" timestamp="1603720228341" />
+    <state x="-3280" y="86" key="Vcs.Push.Dialog.v2" timestamp="1603622642929">
+      <screen x="-3840" y="-178" width="1920" height="1057" />
+    </state>
+    <state x="-3280" y="86" key="Vcs.Push.Dialog.v2/0.23.1440.877/-3840.-178.1920.1057/-1920.-60.1920.1057@-3840.-178.1920.1057" timestamp="1603622642929" />
+  </component>
+</project>

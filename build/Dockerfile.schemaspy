@@ -1,0 +1,18 @@
+FROM schemaspy/schemaspy:snapshot
+
+# USER を root にする
+USER root
+
+# mysql コマンドを使うために追加
+RUN apk add --no-cache mysql-client
+
+# JDBC ドライバをインストール
+ADD http://search.maven.org/remotecontent?filepath=mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar \
+    /drivers/mysql-connector-java-8.0.16.jar
+
+# Gitlab CI のためにエントリポイントをクリア
+ENTRYPOINT [""]
+
+# schemaspy の実行コマンドを配置
+COPY schemaspy.sh /usr/local/bin/schemaspy
+RUN chmod +x /usr/local/bin/schemaspy

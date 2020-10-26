@@ -1,0 +1,57 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.19.3-alpine
+    container_name: schemaspy_nginx
+    volumes:
+    - ./schemaspy/output:/var/www/html:ro
+    - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+    - 8081:80
+    depends_on:
+      - schemaspy
+    environment:
+      LANG: a_JP.UTF-8
+      TZ: Asia/Tokyo
+    command: "nginx -g 'daemon off;'"
+
+  schemaspy:
+    image: schemaspy/schemaspy:6.1.0
+    volumes:
+      - ./schemaspy/drivers:/drivers
+      - ./schemaspy/output:/output
+    depends_on:
+      - mysql
+    command: >
+      java -jar schemaspy.jar -debug
+      -t mysql
+      -dp /drivers
+      -host host.docker.internal
+      -port 3306
+      -db test_database
+      -u sa
+      -p sa
+      -s test_database
+      -connprops useSSL\\=false
+
+  mysql:
+    build:
+      context: ../.
+      dockerfile: build/Dockerfile.mysql
+    container_name: mysql_host
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test_database
+      MYSQL_USER: sa
+      MYSQL_PASSWORD: sa
+      TZ: 'Asia/Tokyo'
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+      - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./mysql/initdb.d:/docker-entrypoint-initdb.d
+      - ./log/mysql:/var/log/mysql

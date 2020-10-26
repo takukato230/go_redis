@@ -1,3 +1,7 @@
 *.rdb
 developments/data/
 developments/log/
+
+developments/schemaspy/output/
+
+.idea
